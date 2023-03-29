@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: gray;
+}
+.themeComponent {
+    display: flex;
+    flex-direction: column;
+    background-color: #F1DEC9;
+    width: 340px;
+    height: 417px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.themeH1 {
+    padding-left: 40px;
+    padding-top: 40px;
+    font-size: 44px;
+}

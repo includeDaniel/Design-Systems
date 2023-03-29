@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+.divHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F1DEC9;
+    width: 100%;
+    height: 450px;  
+}   
+.divInsideHeader {
+    padding-left: 230px;
+}
+h1 {
+    font-size: 75px;    
+}
+p{
+    color: #717171;
+    line-height: 150%;
+}

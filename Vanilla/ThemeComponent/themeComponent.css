@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Roboto;
 }
 html {
     background-color: gray;
@@ -16,7 +17,7 @@ html {
 
 }
 .themeH1 {
-    padding-left: 40px;
+    padding-left: 30px;
     padding-top: 40px;
     font-size: 44px;
 }
@@ -24,7 +25,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content :space-between;
-    padding-left: 27px;
+    padding-left: 30px;
     padding-right:80px; 
     margin-top: 25px;
 }

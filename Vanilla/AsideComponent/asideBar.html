@@ -4,17 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="asideBar.css">
     <title>AsideBar</title>
 </head>
 <body>
     <div class="asideBarComponent">
         <div class="titleAside">
-            <h1 style="color: white;" class="">THEME</h1>
+            <h2 style="color: white;" class="">THEME Aside Bar</h2>
         </div>
-        <div class="listComponent">
-            <hr>
+        <hr>
+        <div class="profileAside">
+            <button class="dropdown-btn">
+                <div style="display: flex; flex-direction: row; width: 250px; align-items: center; justify-content: center;">
+                    <img style="width: 34px;height: 34px;border-radius: 50%" src="profilePhoto.jpg" alt="ProfilePhoto"> &nbsp&nbsp&nbsp
+                    <h2 style="color: white; font-size: 16px;">Mattos Júlia</h2> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <i style="color: white;"class="fa fa-caret-down"></i>
+                </div>
+              
+              </button>
+              <div class="dropdown-container">
+                <a href="#"><h2 style="font-size: 16px;">M &nbsp&nbsp&nbsp&nbsp MyProfile</h2></a> <br>
+                <a href="#"><h2 style="font-size: 16px;">S &nbsp&nbsp&nbsp&nbsp Settings</h2></a> <br>
+                <a href="#"><h2 style="font-size: 16px;">L &nbsp&nbsp&nbsp&nbsp Logout</h2></a> <br>
+              </div> 
+
+              <hr>
+            <script>
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+                
+                for (i = 0; i < dropdown.length; i++) {
+                  dropdown[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                      dropdownContent.style.display = "none";
+                    } else {
+                      dropdownContent.style.display = "block";
+                    }
+                  });
+                }
+            </script>
+
+  <!-- 
+ <div class="listComponent">
         <ul>
             <li><a href="/#">Home</a></li>
             <li><a href="/#">About</a></li>
@@ -23,6 +58,7 @@
             <li><a href="/#">Contact</a></li>
           </ul>
         </div>
+--> 
     </div>
 </body>
 </html>
